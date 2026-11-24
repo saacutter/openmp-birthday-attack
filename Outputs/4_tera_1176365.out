@@ -1,0 +1,14 @@
+Build table A
+Searching using file B
+
+Information
+padded=1 table_capacity=134217728 entry_size=64 bytes
+successful_inserts=16777216 dropped_inserts=0 load_factor=0.1250
+insert: total_probe_steps=1195497 avg=0.0713 max=10 retries=1195497
+lookup: total_probe_steps=18772338 max=11
+
+
+Verified Collision
+n1=0000000000d2655a 
+n2=0000000001895e94 Hash=1df051cf3423
+Time=532.388s

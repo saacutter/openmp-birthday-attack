@@ -1,0 +1,5 @@
+cc    -c -o toy_hash.o toy_hash.c
+gcc -fopenmp -O3 -march=native -flto -funroll-loops break_hash.c toy_hash.o -o break_hash
+Potential collision found with a_nonce=e36014 and b_nonce=72ddf63. Verifying...
+Collision verified with hash=4935fba55c54.
+Time=506.761s

@@ -1,0 +1,4 @@
+make: Nothing to be done for 'all'.
+Potential collision found with a_nonce=a2d4e and b_nonce=200d5af. Verifying...
+Collision verified with hash=e9388bb4911a.
+Time=52.234s

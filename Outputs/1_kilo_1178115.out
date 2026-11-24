@@ -1,0 +1,68 @@
+cc    -c -o toy_hash.o toy_hash.c
+gcc -fopenmp -O3 -march=native -flto -funroll-loops break_hash.c toy_hash.o -o break_hash
+Build table A
+Searching using file B
+
+Information
+padded=1 table_capacity=134217728 entry_size=64 bytes
+successful_inserts=16777216 dropped_inserts=0 load_factor=0.1250
+insert: total_probe_steps=1197181 avg=0.0714 max=11 retries=1197181
+lookup: total_probe_steps=20539685 max=13
+
+
+Verified Collision
+n1=000000000081b714 
+n2=000000000168c5ce Hash=fdddcf90d1b4
+Time=204.051s
+
+--- per-thread timing ---
+thread  0: phaseA=23.434s barrier_wait=0.000s phaseB=180.571s
+thread  1: phaseA=23.434s barrier_wait=0.000s phaseB=180.574s
+thread  2: phaseA=23.433s barrier_wait=0.000s phaseB=180.569s
+thread  3: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread  4: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread  5: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread  6: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread  7: phaseA=23.431s barrier_wait=0.000s phaseB=180.569s
+thread  8: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread  9: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 10: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 11: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 12: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 13: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 14: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 15: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 16: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 17: phaseA=23.430s barrier_wait=0.000s phaseB=180.569s
+thread 18: phaseA=23.426s barrier_wait=0.000s phaseB=180.569s
+thread 19: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 20: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 21: phaseA=23.426s barrier_wait=0.000s phaseB=180.569s
+thread 22: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 23: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 24: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 25: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 26: phaseA=23.432s barrier_wait=0.000s phaseB=180.569s
+thread 27: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 28: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 29: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 30: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 31: phaseA=23.412s barrier_wait=0.000s phaseB=180.569s
+thread 32: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 33: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 34: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 35: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 36: phaseA=23.417s barrier_wait=0.000s phaseB=180.569s
+thread 37: phaseA=23.427s barrier_wait=0.000s phaseB=180.569s
+thread 38: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 39: phaseA=23.434s barrier_wait=0.000s phaseB=180.568s
+thread 40: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 41: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 42: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 43: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+thread 44: phaseA=23.422s barrier_wait=0.000s phaseB=180.569s
+thread 45: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 46: phaseA=23.421s barrier_wait=0.000s phaseB=180.569s
+thread 47: phaseA=23.434s barrier_wait=0.000s phaseB=180.569s
+phaseA: avg=23.429s min=23.412s max=23.434s (spread=0.022s)
+avg barrier_wait=0.000s  avg phaseB=180.569s

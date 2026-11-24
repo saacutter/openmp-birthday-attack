@@ -1,0 +1,8 @@
+cc    -c -o toy_hash.o toy_hash.c
+gcc -fopenmp -O3 -march=native -flto -funroll-loops break_hash.c toy_hash.o -o break_hash
+Build table A
+Searching using file B
+Verified Collision
+n1=0000000000e24df4 
+n2=00000000066953f7 Hash=9b463a6cb4ca
+Time=227.098s

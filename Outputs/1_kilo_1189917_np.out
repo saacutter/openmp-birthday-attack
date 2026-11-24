@@ -1,0 +1,3 @@
+make: Nothing to be done for 'all'.
+Potential collision found with a_nonce=37878e and b_nonce=69d5c03. Verifying...
+Collision verified with hash=b757e008f792.

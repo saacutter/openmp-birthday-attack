@@ -1,0 +1,6 @@
+cc    -c -o toy_hash.o toy_hash.c
+gcc -fopenmp -O3 -march=native -flto -funroll-loops break_hash.c toy_hash.o -o break_hash
+Verified Collision
+n1=000000000037878e 
+n2=00000000069d5c03 Hash=b757e008f792
+Time=45.252s
